@@ -8,26 +8,24 @@ Guyzz Githubil നിന്നും വേറെ ഒരാളുടെ repo edi
 """
 
 class script(object):   
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+    HELP_TXT = """𝑯𝑬𝑰 {}
+𝙷𝙴𝚁𝙴 𝙸𝚂 𝑯𝑬𝑹𝑬 𝑰𝑺 𝑴𝒀 𝑯𝑬𝑳𝑷 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴 : {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : <a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 </a>
-✯ 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 : <a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : 𝙼𝙾𝙽𝙶𝙾-𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 : 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 : 𝚅1.0.43 [𝙼𝙰𝙹𝙾𝚁]"""
+✿ 𝑶𝑾𝑵𝑬𝑹  : <a href=https://t.me/UALEXY> 𝑨𝑳𝑬𝑿𝒀  </a>
+❀ 𝑮𝑹𝑶𝑼𝑷  : <a href=https://t.me/CCG_LINKS> 𝑪𝑰𝑵𝑬𝑴𝑨 𝑪𝑶𝑴𝑷𝑨𝑵𝒀 </a>
+✿ 𝑵𝑨𝑴𝑬   : 𝑪𝑰𝑵𝑬𝑴𝑨 𝑭𝑳𝑰𝑿
+❀ 𝑺𝑻𝑨𝑻𝑼𝑺 : 𝑾𝑶𝑹𝑲𝑰𝑵𝑮
+✿ 𝑫𝑩     : 𝑴𝑶𝑵𝑮𝑶-𝑫𝑩
+❀ 𝑺𝑬𝑹𝑽𝑬𝑹 : 𝑯𝑬𝑹𝑶𝑲𝑼
+✿ 𝑩𝑼𝑰𝑳𝑫 𝑺𝑻𝑨𝑻𝑼𝑺: 𝚅1.0.43 [𝙼𝙰𝙹𝙾𝚁]"""
     SOURCE_TXT = """<b>NOTE:</b>
-- This is a  <a href=https://github.com/EvamariaTG/EvaMaria>Eva Mari</a> clone Project
-- All Creditz ❣️ <a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a> ❣️ UYIR 🔥🔥
-- original source code - <a href=https://github.com/Aadhi000/Ajax-Extra-Features>Ajax-Extra-Features</a> 
+- All the files in this bot are freely available on the internet or posted by somebody else. This bot is indexing files which are already uploaded on Telegram for easy of searching, We respect all the copyright laws and works in compliance with DMCA and EUCD. If anything is against law please contact us so that it can be removed asap. It is forbidden to download, stream, reproduce, or by any means, share, or consume, content without explicit permission from the content creator or legal copyright holder. If you believe this bot is violating your intellectual property, contact the respective channels for removal. The Bot does not own any of these contents, it only index the files from telegram. 
 
-- 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁 👉 :<a href=https://github.com/MrMKN/PROFESSOR-BOT>𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑-𝐁𝐎𝐓</a>
+- 𝑺𝑶𝑼𝑹𝑪𝑬 👉 :<a href=https://github.com/MrMKN/UALEXY> 𝑪𝑶𝑵𝑻𝑨𝑪𝑻 𝑨𝑫𝑴𝑰𝑵 </a>
 
 <b>DEVS:</b>
-- 𝙳𝚎𝚟 1<a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
-- 𝙳𝚎𝚟 2<a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a>"""
+- 𝙳𝚎𝚟 1<a href=https://t.me/UALEXY> 𝑨𝑳𝑬𝑿𝒀 </a>
+- 𝙳𝚎𝚟 2<a href=https://t.me/UALEXY>𝑱𝑬𝑹𝑰𝑵</a>"""
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
 
 <b>𝙱𝚈 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝚃𝙾𝚁𝙴 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙰𝙽𝙳 𝙸 𝚆𝙸𝙻𝙻 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄 𝙰 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺  𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝚃𝙷𝙴 𝚂𝙰𝚅𝙴𝙳 𝙵𝙸𝙻𝙴𝚂.𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰 𝙿𝚄𝙱𝙻𝙸𝙲 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝙵𝙸𝙻𝚆 𝙻𝙸𝙽𝙺 𝙾𝙽𝙻𝚈  𝙾𝚁 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰  𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚈𝙾𝚄 𝙼𝚄𝚂𝚃 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽 𝚃𝙷𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝙵𝙸𝙻𝙴𝚂...//</b>
