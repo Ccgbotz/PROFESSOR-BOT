@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢', url=f'https://t.me/{SUPPORT_CHAT}')
+                InlineKeyboardButton('𝑼𝑷𝑫𝑨𝑻𝑬𝑺', url=f'https://t.me/{SUPPORT_CHAT}')
             ],
             [
-                InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿 ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton('𝑯𝑬𝑳𝑷', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,13 +42,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2: 
         buttons = [[
-            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("✚ 𝑨𝑫𝑫 𝑴𝑬 𝑻𝑶 𝒀𝑶𝑼𝑹 𝑮𝑹𝑶𝑼𝑷 ✚", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/mkn_bots_updates")
+            InlineKeyboardButton("𝑺𝑬𝑨𝑹𝑪𝑯", switch_inline_query_current_chat=''), 
+            InlineKeyboardButton("𝑼𝑷𝑫𝑨𝑻𝑬𝑺", url="https://t.me/CCG_LINKS")
             ],[      
-            InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿 ℹ️", callback_data="help"),
-            InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
+            InlineKeyboardButton("𝑯𝑬𝑳𝑷", callback_data="help"),
+            InlineKeyboardButton("𝑨𝑩𝑶𝑼𝑻", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_chat_action("Typing")
@@ -71,13 +71,13 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📢 Join Update Channel 📢", url=invite_link.invite_link
+                    "𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙀𝙇", url=invite_link.invite_link
                 )
             ]
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton("𝙏𝙍𝙔 𝘼𝙂𝘼𝙄𝙉", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text=FORCE_SUB_TEXT,
@@ -87,13 +87,13 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:   
         buttons = [[
-            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("✚ 𝑨𝑫𝑫 𝑴𝑬 𝑻𝑶 𝒀𝑶𝑼𝑹 𝑮𝑹𝑶𝑼𝑷 ✚", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/mkn_bots_updates")
+            InlineKeyboardButton("𝑺𝑬𝑨𝑹𝑪𝑯 ", switch_inline_query_current_chat=''), 
+            InlineKeyboardButton("𝑼𝑷𝑫𝑨𝑻𝑬𝑺", url="https://t.me/CCG_LINKS")
             ],[      
-            InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿 ℹ️", callback_data="help"),
-            InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
+            InlineKeyboardButton("𝑯𝑬𝑳𝑷 ", callback_data="help"),
+            InlineKeyboardButton("𝑨𝑩𝑶𝑼𝑻", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)          
         await message.reply_chat_action("Typing")
