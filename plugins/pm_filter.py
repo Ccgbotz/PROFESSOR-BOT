@@ -89,7 +89,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("😁 𝗛𝗲𝘆 𝗙𝗿𝗶𝗲𝗻𝗱,𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿𝘀𝗲𝗹𝗳.", show_alert=True)
+        return await query.answer("𝑇𝐻𝐼𝑆 𝐹𝐼𝐿𝑇𝐸𝑅 𝐼𝑆 𝑁𝑂𝑇 𝐹𝑂𝑅 𝑌𝑂𝑈,𝑇𝑅𝑌 𝑌𝑂𝑈𝑅 𝑆𝐸𝐿𝐹 .", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -168,14 +168,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("😁 𝗛𝗲𝘆 𝗙𝗿𝗶𝗲𝗻𝗱,𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿𝘀𝗲𝗹𝗳.", show_alert=True)
+        return await query.answer("😁 𝑇𝐻𝐼𝑆 𝐹𝐼𝐿𝑇𝐸𝑅 𝐼𝑆 𝑁𝑂𝑇 𝐹𝑂𝑅 𝑌𝑂𝑈,𝑇𝑅𝑌 𝑌𝑂𝑈𝑅 𝑆𝐸𝐿𝐹.", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
         return await query.answer("𝐋𝐢𝐧𝐤 𝐄𝐱𝐩𝐢𝐫𝐞𝐝 𝐊𝐢𝐧𝐝𝐥𝐲 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐀𝐠𝐚𝐢𝐧 🙂.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙵𝙸𝙻𝙴 𝙾𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴...//')
+    await query.answer('𝑻𝑹𝒀𝑰𝑵𝑮 𝑻𝑶 𝑭𝑰𝑵𝑫 𝑻𝑯𝑨𝑻 𝑴𝑶𝑽𝑰𝑬...//')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -183,7 +183,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('𝚃𝙷𝙸𝚂 𝙼𝙾𝚅𝙸𝙴 I𝚂 𝙽𝙾𝚃 𝚈𝙴𝚃 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝙾𝚁 𝙰𝙳𝙳𝙴𝙳 𝚃𝙾 𝙳𝙰𝚃𝚂𝙱𝙰𝚂𝙴 💌')
+            k = await query.message.edit('𝑺𝑶𝑹𝑹𝒀 𝑾𝑬 𝑪𝑨𝑵𝑻 𝑭𝑰𝑵𝑫 𝑻𝑯𝑨𝑻 𝑭𝑰𝑳𝑴 𝑲𝑰𝑵𝑫𝑳𝒀 𝑪𝑶𝑵𝑻𝑨𝑪𝑻 𝑨𝑫𝑴𝑰𝑵')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -693,13 +693,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("🤨 Curiosity is a little more, isn't it? 😁")
     elif query.data == "start":                        
         buttons = [[
-            InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("✚ 𝐴𝐷𝐷 𝑀𝐸 𝑇𝑂 𝑌𝑂𝑈𝑅 𝐺𝑅𝑂𝑈𝑃 ✚", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/mkn_bots_updates")
+            InlineKeyboardButton("♤ 𝑆𝐸𝐴𝑅𝐶𝐻 ♤ ", switch_inline_query_current_chat=''), 
+            InlineKeyboardButton("♧ 𝑈𝑃𝐷𝐴𝑇𝐸𝑆 ♧", url="https://t.me/CCG_LINKS")
             ],[      
-            InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿 ℹ️", callback_data="help"),
-            InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
+            InlineKeyboardButton("♢ 𝐻𝐸𝐿𝑃 ♢", callback_data="help"),
+            InlineKeyboardButton("☊ 𝐴𝐵𝑂𝑈𝑇 ☊", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -759,18 +759,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙿𝙸𝙽𝙶', callback_data='pings'),            
             InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
             ],[
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('⏭️ 𝙽𝙴𝚇𝚃 ⏭️', callback_data='mkn')
+            InlineKeyboardButton('♘ 𝐻𝑂𝑀𝐸 ♘', callback_data='start'),
+            InlineKeyboardButton(' 𝑁𝐸𝑋𝑇 ☛', callback_data='mkn')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="▣ ▢ ▢"
+            text="☘"
         )
         await query.message.edit_text(
-            text="▣ ▣ ▢"
+            text="✿✿"
         )
         await query.message.edit_text(
-            text="▣ ▣ ▣"
+            text="❀❀❀"
         )       
         await query.message.edit_text(                     
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -819,10 +819,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('❣️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ❣️', callback_data='source')
+            InlineKeyboardButton('❣️ 𝑆𝑂𝑈𝑅𝐶𝐸 𝐶𝑂𝐷𝐸 ❣️', callback_data='source')
             ],[
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+            InlineKeyboardButton(' 𝐻𝑂𝑀𝐸 ', callback_data='start'),
+            InlineKeyboardButton(' 𝐶𝐿𝑂𝑆𝐸 ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -841,7 +841,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('SOURCE CODE', url='https://github.com/MrMKN/PROFESSOR-BOT')
+            InlineKeyboardButton('𝑆𝑂𝑈𝑅𝐶𝐸 𝐶𝑂𝐷𝐸 ', url='https://t.me/+toKVJWjWWkYzNjA1')
             ],[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
         ]]
