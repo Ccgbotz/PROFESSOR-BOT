@@ -59,8 +59,8 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
-START_MESSAGE = environ.get('START_MESSAGE', '👋 𝙷𝙴𝙻𝙾 {user}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽...')
-BTN_LOCK_ALERT = environ.get("BTN_LOCK_ALERT", "⚠️ 𝙃𝙚𝙮 {query}! 𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣")
+START_MESSAGE = environ.get('START_MESSAGE', '👋 𝙷𝙴𝙻𝙾 {user}\n\n 𝑴𝒀 𝑵𝑨𝑴𝑬 𝑰𝑺 {bot},\n𝑰 𝑪𝑨𝑵 𝑷𝑹𝑶𝑽𝑰𝑫𝑬 𝑴𝑶𝑽𝑰𝑬𝑺 𝑰𝑵 𝒀𝑶𝑼𝑹 𝑮𝑹𝑶𝑼𝑶𝑺 𝑱𝑼𝑺𝑻 𝑴𝑨𝑲𝑬 𝑴𝑬 𝑨𝑫𝑴𝑰𝑵...')
+BTN_LOCK_ALERT = environ.get("BTN_LOCK_ALERT", "⚠️ 𝙃𝙚𝙮 {query}! 𝑻𝑯𝑨𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑶𝑹 𝒀𝑶𝑼 . 𝑰𝑭 𝒀𝑶𝑼 𝑾𝑨𝑵𝑻 𝑻𝑯𝑰𝑺 𝑴𝑶𝑽𝑰𝑬 𝑹𝑬𝑸𝑼𝑺𝑻 𝒀𝑶𝑼𝑹 𝑶𝑾𝑵")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!')
 RemoveBG_API = environ.get("RemoveBG_API", "")
 
